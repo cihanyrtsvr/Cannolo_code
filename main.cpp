@@ -24,6 +24,7 @@ int main(){
             
         }
     }
+    
     second < 0 ? second = first : second=second ;
           
     

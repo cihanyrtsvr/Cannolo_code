@@ -24,10 +24,10 @@ int main(){
             
         }
     }
-    
+
     second < 0 ? second = first : second=second ;
           
-    
+    cout << (first * 10) + second << endl;
 
     total += (first * 10) + second ;
 

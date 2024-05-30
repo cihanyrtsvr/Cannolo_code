@@ -12,8 +12,8 @@ Advent of Code is an annual event where coding challenges are released each day 
 
 ## Table of Contents
 
-- [Day 1: Title](day1/README.md)
-- [Day 2: Title](day2/README.md)
+- [Day 1: Title](https://adventofcode.com/2023/day/1)
+- [Day 2: Title](https://adventofcode.com/2023/day/2)
 - ...
 
 ## Running the Solutions

@@ -2,23 +2,22 @@
 #include <iostream>
 #include <vector>
 #include <sstream>
+#include "ElectricCar.h"
 
 using namespace std;
 
 
 
-void staticCounter() {
-   int counter = 0; // Initialized only once when the function is first called
-  counter++;
-  std::cout << "Counter inside function: " << counter << std::endl;
-}
 
 int main() {
-  // Call the function multiple times
-  for (int i = 0; i < 3; i++) {
-    staticCounter();
-  }
-  string s{"world is mine"};
-  cout<< s.length();
-  return 0;
+    
+    Vehicle vehicleClassObj(10,20,22,12);
+    ElectricCar electricCar(10,78,40,45,11);
+    cout<<" the battery level: "<< electricCar.getBatteryLevel()<<endl;
+    electricCar.setBatteryLevel(22);
+    cout<<" After the assignment batery level: "<<electricCar.getBatteryLevel()<<endl;
+    cout<<"Get the throttle from electric: "<< electricCar.getThrottle()<<endl;
+
+    cout << " The vehicle obj Throttle: " << vehicleClassObj.getThrottle()<<endl;
+    return 0;
 }

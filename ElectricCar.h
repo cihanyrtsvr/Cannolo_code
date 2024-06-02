@@ -4,7 +4,7 @@
 #include <string>
 #include "Vehicle.h"
 
-class ElectricCar : public Vehicle{
+class ElectricCar : public Vehicle {
 public:
     ElectricCar(const int& st, const int& th, const int& br, int fu, const int& el_bat) 
     : Vehicle(st, th, br,fu){
@@ -14,6 +14,10 @@ public:
 
     void setBatteryLevel(const int& bat){
         electric_batery = bat;
+    }
+
+    int getBatteryLevel () const{
+        return electric_batery;
     }
 private:
     int electric_batery;

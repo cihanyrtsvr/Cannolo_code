@@ -7,6 +7,7 @@ public:
 
     Vehicle(const int& s, const int& t, int b, int f) {
         setSteering(s);
+        setThrottle(t);
 
     }
 
@@ -16,6 +17,10 @@ public:
 
     void  setThrottle(int th){
         throttle = th;
+    }
+
+    int getThrottle()const{
+        return throttle;
     }
 
 private: 

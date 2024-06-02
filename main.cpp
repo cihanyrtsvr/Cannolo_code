@@ -18,5 +18,7 @@ int main() {
   for (int i = 0; i < 3; i++) {
     staticCounter();
   }
+  string s{"world is mine"};
+  cout<< s.length();
   return 0;
 }

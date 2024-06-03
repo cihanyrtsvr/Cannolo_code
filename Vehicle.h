@@ -23,6 +23,8 @@ public:
         return throttle;
     }
 
+    void virtual voice(){ cout<<" General voice!"<<endl;}
+
 private: 
     int steering;
     int throttle;

@@ -19,6 +19,10 @@ public:
     int getBatteryLevel () const{
         return electric_batery;
     }
+
+    void voice () override {
+        cout <<"ZZzzzzzhhssshhhh"<<endl;
+    }
 private:
     int electric_batery;
 

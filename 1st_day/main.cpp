@@ -2,14 +2,12 @@
 #include <iostream>
 #include <array>
 #include <vector>
-#include <iomanip>
 
 using namespace std;
 
 
 
 int main(){
-    string str = "pqr3stu8vwx";
     int first = -1, second =-1, total;
     vector<int> result;
 

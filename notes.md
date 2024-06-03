@@ -33,6 +33,10 @@ g++ -std=c++14 *.cpp -o ExecutableName
     * The member function is an .cpp file but the definition function is an .h
 An alternative to #ifndef-#define we can use #pragma once
 
+**Abstract classes CAN NOT initiate objects** since they used as base class. 
+The classes that are been used to instantiate classes called ***concrete** classes.
+
+* virtual void draw() const = 0; this is an example of pure class. 
 _Question; Does class also provies the plugin properties as when we destruct we can have the system function same as work?_
 
 _Question; What is abstract class?_

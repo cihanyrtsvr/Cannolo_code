@@ -1,9 +1,5 @@
-#include <fstream>
 #include <iostream>
 #include <vector>
-#include <sstream>
-#include "ElectricCar.h"
-#include "ComplexNumber.h"
 
 using namespace std;
 
@@ -11,30 +7,30 @@ using namespace std;
 
 
 int main() {
+    vector <int> integers;
+    const size_t SIZE{6};
+
+    int numbers_array[SIZE]{1,2,3,4,5,6};
+
+    for (const int* normal_ptr = cbegin(numbers_array); normal_ptr != cend(numbers_array); normal_ptr++){
+        cout << *normal_ptr<< ' '; 
+    }
+    cout << "\nexample with vector"<<endl;
+    integers.emplace_back(2);
+    integers.emplace_back(3);
+    integers.emplace_back(4);
+
+    for (auto reverse_ptr = integers.crbegin(); reverse_ptr != integers.crend(); ++reverse_ptr  )
+    {
+        cout << *reverse_ptr<< " ";
+    }
+    cout << "\nexample with normal vector"<<endl;
+    printVector(integers);
+
+}
     
-    Vehicle vehicleClassObj(10,20,22,12);
-    ElectricCar electricCar(10,78,40,45,11);
-    ComplexNumbers comp_num1(2,4), comp_num2(5,-2), comp_num3;
-
-    comp_num3 = comp_num1 + comp_num2;
-
-    comp_num3.programout();
-
-    comp_num3.Addition(3.5);
-    comp_num3.programout();
-    comp_num3.Addition(0,5.2);
-    comp_num3.programout();
-
-    
-    cout<<" the battery level: "<< electricCar.getBatteryLevel()<<endl;
-    electricCar.setBatteryLevel(22);
-    cout<<" After the assignment batery level: "<<electricCar.getBatteryLevel()<<endl;
-    cout<<"Get the throttle from electric: "<< electricCar.getThrottle()<<endl;
-
-    cout << " The vehicle obj Throttle: " << vehicleClassObj.getThrottle()<<endl;
-
-
-    electricCar.voice();
-    vehicleClassObj.voice();
-    return 0;
+template <typename T> void printVector(const vector<T>& integers2) {
+    for(auto counter = integers2.cbegin(); counter != integers2.cend(); counter++){
+        cout<< *counter << ' ';
+    }
 }

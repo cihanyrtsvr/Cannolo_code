@@ -12,8 +12,9 @@ Advent of Code is an annual event where coding challenges are released each day 
 
 ## Table of Contents
 
-- [Day 1: Title](https://adventofcode.com/2023/day/1)
-- [Day 2: Title](https://adventofcode.com/2023/day/2)
+- [Day 1: Trebuchet](https://adventofcode.com/2023/day/1)
+- [Day 2: Cube Conundrum](https://adventofcode.com/2023/day/2)
+- [Day 3: Gear Ratios](https://adventofcode.com/2023/day/3)
 - ...
 
 ## Running the Solutions
@@ -23,4 +24,3 @@ Instructions on how to run the solutions will be provided in each day's README f
 ## Contributions
 
 Contributions are welcome! Feel free to submit a pull request with improvements or new solutions.
-

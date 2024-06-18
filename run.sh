@@ -23,7 +23,7 @@ run() {
     local base_name=$(basename "$input_file" .cpp)
 
     # Compile the C++ code
-    g++ -Wall -o "$base_name" "$input_file"
+    g++ -Wall -std=c++14 -o "$base_name" "$input_file"
 
     # Check if the compilation was successful
     if [ $? -eq 0 ]; then

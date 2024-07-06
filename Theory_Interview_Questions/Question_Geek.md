@@ -1,4 +1,4 @@
-# Interview Question From GeeksForGeeks
+# Interview Question From GeeksForGeeks -Junior level
 
 
 ## Q1: What is difference between C and C++ ? Explain the advantages of C++.
@@ -75,3 +75,40 @@ Object: The instance of the class.
 
 **Polymorphism:** known as Means Existance of many forms.
 
+## Q8: What is inheritance?
+
+Inheritance is a capability of a class to deriving properties of the another class. 
+
+## Q9: What is Polymorphism?
+Polymorphism is an mony forms of same thing. 
+
+We can also say that Polymorphism is the ability  to display a member function in multiple forms depending on the type of object that calls them.
+
+There are two types of Polymorphism;
+
+**Compile time Polymorphism**
+It is achieved during the compile time of the program.(It is a static binding) It is a bit fater then the run time polymorphism. In heritance not incolved
+- Function Overloading: Multiple function with same name but different parameters.
+- Operator overloading: Giving special meaning to existing operator  
+
+**Run time Polymorphism**
+It is achieved in the run time (Dynamic binding). A bit slower then the compile time since its execution known in run time. 
+- Virtual Function; so its functionoverriding by virtual
+- Function Overriding: Occures when the base class function redefined int the derived class with the same arguments and return type.
+
+## Q10: What is difference between Virtual function and pure virtual function?
+
+|Virtual Function | Pure Virtual Function|
+|---| ---| 
+|The virtual function is a member function of base class with virtual key word and it can be redifined in the derived class. |The Pure Virtual Function is a member function of the base class can only be declerad in the base(with =0) class and defined in the drived class to prevent it become abstract class.|
+
+## Q11: What is difference between new and malloc()? 
+
+|new|malloc()|
+|---|---|
+|new is a operator which performs operation| malloc is a function that recieves and returns values|
+|new calles constructor| malloc can not call constructor|
+|new is faster than malloc|slower|
+|new returns the exact data type| returns void*|
+
+#Constructor then need to pass intermediate level dnt

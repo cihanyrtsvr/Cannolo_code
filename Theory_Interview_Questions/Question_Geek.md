@@ -111,4 +111,5 @@ It is achieved in the run time (Dynamic binding). A bit slower then the compile 
 |new is faster than malloc|slower|
 |new returns the exact data type| returns void*|
 
-#Constructor then need to pass intermediate level dnt
+
+#Constructor then need to pass intermediate level d

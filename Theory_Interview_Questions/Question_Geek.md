@@ -301,10 +301,10 @@ Iterators are commonly used in conjunction with standard template library (STL) 
 
 ### Here's an analogy:
 
+
 Imagine a library. Pointers are like random library cards that might point to any book on any shelf. You need to know the library layout and be careful not to lose the card (dangling pointer). Iterators are like bookmarks specifically designed for a particular book section. They know how to navigate through the section and access books in order, ensuring you don't lose your place.
 
 ### In summary:
 
-Pointers offer more flexibility but require manual memory management and careful use.
-Iterators are safer and more convenient for container access, but they are tied to a specific container type.
+Pointers offer more flexibility but require manual memory management and careful use. Iterators are safer and more convenient for container access, but they are tied to a specific container type.
 Choosing between pointers and iterators depends on your specific needs. When working with containers, iterators are generally the preferred choice due to their safety and ease of use. However, pointers can still be valuable for low-level memory manipulation and specific use cases where their flexibility is necessary.

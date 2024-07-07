@@ -111,4 +111,90 @@ It is achieved in the run time (Dynamic binding). A bit slower then the compile 
 |new is faster than malloc|slower|
 |new returns the exact data type| returns void*|
 
-#Constructor then need to pass intermediate level d
+## Explain the contructor in C++?
+
+It is a special type of class member function. It has the same name with the class and it is called when the object is invoked and its initializes the object in well defined state. 
+**Used for**
+- Initializes the member variable of the class.
+
+There is 3 types of constructor;
+#### Default Constructor;
+Constructor with no arguments. If u dont defined explicityly the constructor compiler provides  automatically. In thius type the member function does not initialized
+#### Parametrized Constructor: Defined;
+Explicityly initialized objects member variables with spesific value.
+#### Copy Constructor;
+Special contructor that creates the copy of existing object. 
+
+Benefits of Constructors;
+- Enforces proper initialization of objects, prevents unexpected behavoir.
+- Allows the customizaiton of the initial state of objects based on the needs.
+
+## Q12: What are destructos in C++? 
+
+The destructirs are destroying the object when it goes out of scope. Destructor follows down to the top approach unlike the Constructor which is top to the down. 
+
+#### Virtual destructor; 
+Guarantees that first derived class destructor is called. Thent eh base class destructor is called. In this way it saves us from the memory leaks. 
+
+#### !The destroctors can be overloaded.
+
+## Q13: Can the code be compiled with out the main()?
+
+Yes we can compile the program without the main but we can run it. SInce to run a program we need to have a entry point(where all the execution begins) and the main is the entry point. 
+
+## Q14: Explain the difference between pre-increment (++x) and post-increment (x++) operators.
+
+Pre-increment ( ++x ):
+Increments the value of the variable x by 1.
+Then, it returns the new incremented value.
+Example: int x = 5; int y = ++x; // y will be 6, x will also be 6
+
+Post-increment ( x++ ):
+First, it returns the current value of the variable x.
+Then, it increments the value of x by 1.
+Example: int x = 5; int y = x++; // y will be 5, x will become 6
+
+## Q15: What are the dangers of pointer dangling and how can you avoid them?
+
+#### Pointer Dangling: 
+This occurs when a pointer is declared and assigned a memory address, but the memory that address pointed to is deallocated (freed using delete). The pointer still holds the old address, which is no longer valid and points to nowhere.
+
+#### Consequences: 
+Attempting to access or modify memory through a dangling pointer can lead to program crashes, unexpected behavior, or security vulnerabilities.
+
+#### Prevention:
+Use smart pointers (unique_ptr, shared_ptr) that automatically manage memory deallocation.
+Ensure you don't access a pointer after the memory it points to has been freed.
+
+Properly initialize and manage pointers throughout your code(RAII).
+
+## Q15: What is the null pointer and how is it used in C++?
+
+A special pointer value that doesn't point to any valid memory location.
+Used to indicate that a pointer doesn't currently point to any meaningful data.
+Common practice to initialize pointers to nullptr before assigning them a valid address.
+Often used for error handling or checking if a pointer has been assigned memory.
+
+## Q16: Explain the difference between a vector and an array in C++.
+
+#### Array:
+
+- Fixed size, declared with a specific size at compile time.
+- Direct memory access using indexing (array[index]).
+- Stored contiguously in memory.
+- Cannot be resized after creation.
+
+#### Vector:
+
+- Dynamically sized array, can grow or shrink at runtime.
+- Offers methods for adding, removing, accessing elements.
+- Stored contiguously in memory, but can reallocate if needed.
+- More flexible and safer for dynamic data management.
+
+## Q17: What are some common memory management techniques in C++ besides using new and delete?
+
+#### Smart Pointers:
+- unique_ptr: Owns a single object and automatically deletes it when it goes out of scope.
+- shared_ptr: Shared ownership of an object, deleted when the last shared_ptr goes out of scope.
+#### Resource Acquisition Is Initialization (RAII):
+Objects acquire resources in the constructor and release them in the destructor.

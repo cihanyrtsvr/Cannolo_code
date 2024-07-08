@@ -308,3 +308,16 @@ Imagine a library. Pointers are like random library cards that might point to an
 
 Pointers offer more flexibility but require manual memory management and careful use. Iterators are safer and more convenient for container access, but they are tied to a specific container type.
 Choosing between pointers and iterators depends on your specific needs. When working with containers, iterators are generally the preferred choice due to their safety and ease of use. However, pointers can still be valuable for low-level memory manipulation and specific use cases where their flexibility is necessary.
+
+## Q23: Why do we use friend function? 
+
+
+In C++, friend functions are a mechanism for granting non-member functions special access to the private or protected members of a class. This can be useful in certain scenarios, but it's important to use them judiciously as they can break encapsulation principles if overused.
+
+Here are some reasons why you might use friend functions:
+
+- Overloading Operators: When overloading operators (like +, -, or <<) for your class, you often need to access private members to perform the operation correctly. Declaring the operator overloading function as a friend of the class allows it to access these private members.
+
+- Helper Functions: Sometimes, you might have helper functions that work closely with a specific class and need access to its private members for efficient operation. Making the helper function a friend can simplify the code and improve efficiency.
+
+- External Dependencies: In some cases, you might have external libraries or frameworks that need to interact with the private members of your class. Declaring the relevant functions from the library as friends can enable this interaction.

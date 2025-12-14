@@ -17,3 +17,5 @@ Object orineted programing is  paradigm that organizes software around object, w
     - Allows different objects built from different blueprint, to repsond tot he same command in their own way. The shared, general fucntion is frist defineed in a base class usinf virtual keyword
  * Abstraction 
     - which hides complex implementation details and only exposes what is necessary to user. 
+
+    119P

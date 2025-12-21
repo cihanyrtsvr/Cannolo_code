@@ -75,11 +75,14 @@ Object: The instance of the class.
 
 **Polymorphism:** known as Means Existance of many forms.
 
-## Q8: What is inheritance?
+## Q8: What is the difference between struct and class
+A c++ capability that allows many functions to be defined with same name but different signature.
+
+## Q9: What is inheritance?
 
 Inheritance is a capability of a class to deriving properties of the another class. 
 
-## Q9: What is Polymorphism?
+## Q10: What is Polymorphism?
 Polymorphism is an mony forms of same thing. 
 
 We can also say that Polymorphism is the ability  to display a member function in multiple forms depending on the type of object that calls them.
@@ -96,13 +99,13 @@ It is achieved in the run time (Dynamic binding). A bit slower then the compile 
 - Virtual Function; so its functionoverriding by virtual
 - Function Overriding: Occures when the base class function redefined int the derived class with the same arguments and return type.
 
-## Q10: What is difference between Virtual function and pure virtual function?
+## Q11: What is difference between Virtual function and pure virtual function?
 
 |Virtual Function | Pure Virtual Function|
 |---| ---| 
 |The virtual function is a member function of base class with virtual key word and it can be redifined in the derived class. |The Pure Virtual Function is a member function of the base class can only be declerad in the base(with =0) class and defined in the drived class to prevent it become abstract class.|
 
-## Q11: What is difference between new and malloc()? 
+## Q12: What is difference between new and malloc()? 
 
 |new|malloc()|
 |---|---|
@@ -129,7 +132,7 @@ Benefits of Constructors;
 - Enforces proper initialization of objects, prevents unexpected behavoir.
 - Allows the customizaiton of the initial state of objects based on the needs.
 
-## Q12: What are destructos in C++? 
+## Q13: What are destructos in C++? 
 
 The destructirs are destroying the object when it goes out of scope. Destructor follows down to the top approach unlike the Constructor which is top to the down. 
 
@@ -138,11 +141,11 @@ Guarantees that first derived class destructor is called. Thent eh base class de
 
 #### !The destroctors can be overloaded.
 
-## Q13: Can the code be compiled with out the main()?
+## Q14: Can the code be compiled with out the main()?
 
 Yes we can compile the program without the main but we can run it. SInce to run a program we need to have a entry point(where all the execution begins) and the main is the entry point. 
 
-## Q14: Explain the difference between pre-increment (++x) and post-increment (x++) operators.
+## Q15: Explain the difference between pre-increment (++x) and post-increment (x++) operators.
 
 Pre-increment ( ++x ):
 Increments the value of the variable x by 1.
@@ -154,7 +157,7 @@ First, it returns the current value of the variable x.
 Then, it increments the value of x by 1.
 Example: int x = 5; int y = x++; // y will be 5, x will become 6
 
-## Q15: What are the dangers of pointer dangling and how can you avoid them?
+## Q16: What are the dangers of pointer dangling and how can you avoid them?
 
 #### Pointer Dangling: 
 This occurs when a pointer is declared and assigned a memory address, but the memory that address pointed to is deallocated (freed using delete). The pointer still holds the old address, which is no longer valid and points to nowhere.
@@ -168,14 +171,14 @@ Ensure you don't access a pointer after the memory it points to has been freed.
 
 Properly initialize and manage pointers throughout your code(RAII).
 
-## Q15: What is the null pointer and how is it used in C++?
+## Q16: What is the null pointer and how is it used in C++?
 
 A special pointer value that doesn't point to any valid memory location.
 Used to indicate that a pointer doesn't currently point to any meaningful data.
 Common practice to initialize pointers to nullptr before assigning them a valid address.
 Often used for error handling or checking if a pointer has been assigned memory.
 
-## Q16: Explain the difference between a vector and an array in C++.
+## Q17: Explain the difference between a vector and an array in C++.
 
 #### Array:
 
@@ -191,7 +194,7 @@ Often used for error handling or checking if a pointer has been assigned memory.
 - Stored contiguously in memory, but can reallocate if needed.
 - More flexible and safer for dynamic data management.
 
-## Q17: What are some common memory management techniques in C++ besides using new and delete?
+## Q18: What are some common memory management techniques in C++ besides using new and delete?
 
 #### Smart Pointers:
 - unique_ptr: Owns a single object and automatically deletes it when it goes out of scope.
@@ -199,7 +202,7 @@ Often used for error handling or checking if a pointer has been assigned memory.
 #### Resource Acquisition Is Initialization (RAII):
 Objects acquire resources in the constructor and release them in the destructor.
 
-## Q18: What are templates in C++ and how are they used?
+## Q19: What are templates in C++ and how are they used?
 
 In C++, templates are a powerful mechanism for writing generic code that can work with different data types. They allow you to create functions and classes that can operate on a variety of data types without needing to write separate code for each type.
 
@@ -220,7 +223,7 @@ When you use a template, you specify the actual data types you want the template
 Templates enforce type safety by ensuring that the data types used with the template are compatible with the operations performed within the code.
 Improved Performance: In some cases, templates can lead to more efficient code by enabling the compiler to optimize for the specific data types used.
 
-## Q20: Explain the difference between shallow copy and deep copy in C++.
+## Q21: Explain the difference between shallow copy and deep copy in C++.
 
 
 In C++, copying objects involves creating a new object that represents a replica of the original. However, there are two main approaches to copying objects, each with distinct implications for memory management: shallow copy and deep copy.
@@ -243,7 +246,7 @@ For pointers, the deep copy allocates new memory and copies the data pointed to 
 Deep copy ensures that modifications to one object do not affect the other, as they have separate memory allocations for their data.
 This is crucial for maintaining data integrity and avoiding unintended side effects.
 
-## Q21: Explain the concept of move semantics in C++.
+## Q22: Explain the concept of move semantics in C++.
 
 In C++, move semantics is a technique for efficiently transferring ownership of a resource from one object to another. It's particularly useful when dealing with expensive-to-copy objects that manage resources like memory buffers or file handles.
 
@@ -269,7 +272,7 @@ It ensures proper resource ownership transfer, preventing memory leaks or dangli
 #### Clarity: 
 By using std::move, you explicitly indicate the intent to move a resource, making code more readable and less prone to errors.
 
-## Q22: Explain the difference between iterators and pointers in C++
+## Q23: Explain the difference between iterators and pointers in C++
 
 
 Here's a more detailed explanation of the difference between iterators and pointers in C++:
@@ -309,7 +312,7 @@ Imagine a library. Pointers are like random library cards that might point to an
 Pointers offer more flexibility but require manual memory management and careful use. Iterators are safer and more convenient for container access, but they are tied to a specific container type.
 Choosing between pointers and iterators depends on your specific needs. When working with containers, iterators are generally the preferred choice due to their safety and ease of use. However, pointers can still be valuable for low-level memory manipulation and specific use cases where their flexibility is necessary.
 
-## Q23: Why do we use friend function? 
+## Q24: Why do we use friend function? 
 
 
 In C++, friend functions are a mechanism for granting non-member functions special access to the private or protected members of a class. This can be useful in certain scenarios, but it's important to use them judiciously as they can break encapsulation principles if overused.

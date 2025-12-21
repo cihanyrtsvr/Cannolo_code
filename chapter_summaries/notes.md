@@ -1,6 +1,29 @@
 # The Notes about C++ Study
 This md file is used for the note taking of the Dietel book.
+## Chaper 6; Functions and Intro to Recursion 
+ * Fucntion prototypes is a decletation of a function that tells compiler the functionname its return type and its parameters
 
+* _PassbyValue_ is a copy of arguemts value is made and passed to the called fucntion. 
+* _PassbyReferece_ caller gives the called fucntion the ability to acces callers data directly and modifiy it.
+* When funciton called many times with that particular parameter, we can define the parameter as default value.
+* C++ allows by using  :: to acess the global variable 
+* ***Function Overlaod*** :C++ enables several functions of the same name to be defined, as long as these functions have
+different sets of parameters. This capability is called function overloading
+
+## Chapter 7; Class Templates (Vector and Array)
+  * Static Array; Saves the values and keeps in mind whole the program from start to the end. 
+    * Context, Meaning, Analogy
+    - Inside Function, Persist value across calls., A whiteboard in a meeting room that never gets erased.
+    - Inside Class, Shared by all objects.,The office coffee machine (everyone uses the same one).
+    - Global / File, Private to this specific file., Writing in a private diary instead of posting on Twitter.
+
+* **RangeBasedForStatement**
+    - for(item: items){} 
+
+* **``sort()``** and **``binary_search()``**
+    - ``sort(array.begin(),array.end())``
+    - ``binary_search(array.begin(),array.end(), "indigo")``
+* vector<int> nameOfVector(size){members}
 ## Chapter 9; Classes
 
 The class creatn and the law of 3

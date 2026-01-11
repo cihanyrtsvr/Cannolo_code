@@ -315,3 +315,25 @@ int main(){
 5) Action: It sees data is already there! It doesn't need to pause and wait for you to type. It immediately grabs everything left.
 
     -Variable buffer2: Holds " input with cin and cin.get".
+
+## Chapter 15: Standart Template Library: Containers and Iterators
+
+Containers are templetized data structures. There are 3 types of those
+
+1) first class containers
+2) container adapters
+3) near containers
+
+**Iterators** are similar to the pointers they are used to manipulate *containers*.
+
+**Algorithms** are function templates that are providing data manipulation such as; searching, sorting or comparing entire containers. 
+
+
+### Custom Templized Data Strucutres
+* Linked lists are collections of data items logically “lined up in a row”—insertionsand removals are made anywhere in a linked list.
+
+* Stacks are important in compilers and operating systems: Insertions and removals are made only at one end of a stack—its top. Section 6.11 discussed the importance of stacks in the function call and return  mechanism.
+
+* Queues represent waiting lines; insertions are made at the back (also referred to as the tail) of a queue and removals are made from the front (also referred to as the head) of a queue.
+
+* Binary trees are nonlinear, hierarchical data structures that facilitate searching and sorting data, duplicate elimination and compiling expressions into machine code.

@@ -26,6 +26,15 @@ different sets of parameters. This capability is called function overloading
     - ``binary_search(array.begin(),array.end(), "indigo")``
 * vector<int> nameOfVector(size){members}
 
+### How to initialize and vector ? 
+
+```C++
+
+vector<bool> cihan(10 ,true)
+
+```
+
+Means initiazlie the boolean vector Cihan with 10 true values.
 
 ## Chapter 8; Pointers
 * Passing large objects using pointers to constant data, or references to constant data offers
@@ -33,7 +42,7 @@ the security of pass-by-value.
 * Use pass-by-value to pass fundamental-type arguments (e.g., ints, doubles, etc.) to a
 function unless the caller explicitly requires that the called function be able to directly
 modify the value in the caller. This is another  <ins>_example of the principle of least privilege_.<ins>
-## Pointer Configurations in C++
+### Pointer Configurations in C++
 
 There are four ways to pass a pointer to a function in C++, offering different levels of protection for the memory address and the data itself.
 
@@ -337,3 +346,4 @@ Containers are templetized data structures. There are 3 types of those
 * Queues represent waiting lines; insertions are made at the back (also referred to as the tail) of a queue and removals are made from the front (also referred to as the head) of a queue.
 
 * Binary trees are nonlinear, hierarchical data structures that facilitate searching and sorting data, duplicate elimination and compiling expressions into machine code.
+
